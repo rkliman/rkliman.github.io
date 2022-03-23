@@ -1,0 +1,27 @@
+---
+---
+
+/* modify Bootstrap variables here */
+// @import "main";
+// @import "style";
+/* add additional CSS rules below */
+
+// $backgroundColor: #ffffff;
+// $bodyColor: #000000;
+// $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+@import "bootstrap/bootstrap";
+
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+img{
+    pointer-events: none;
+}

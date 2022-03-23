@@ -1,42 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,intial-scale=1">
-  <title>Resume</title>
-  <!-- Adds Bootstrap Styling -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="mdb.css">
-</head>
-
-<body>
-  <!--Navbar, change all if any changes in one -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index">Randall Kliman</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="index">Home</a>
-        <a class="nav-item nav-link active" href="resume">Resume<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="projects">Projects</a>
-        <a class="nav-item nav-link" href="media">Art/Media</a>
-        <a class="nav-item nav-link" href="blog">Blog</a>
-        <a class="nav-item nav-link" href="contact">Contact Me</a>
-      </div>
-    </div>
-  </nav>
+---
+layout: default
+title: Resume
+---
 
   <div class="container" style="margin-top: 3em; margin-bottom: 4em">
     <h1 class="text-center">Resume</h1>
   </div>
 
-<!--  <div class="container">-->
-<!--    Click Here to download my abridged resume-->
-<!--  </div>-->
+  <!-- <div class="container">
+    <div class="justify-content-center">
+      <ul class="nav nav-pills" id="myTab">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#profile" class="nav-link" data-bs-toggle="tab">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#messages" class="nav-link" data-bs-toggle="tab">Messages</a>
+            </li>
+        </ul>
+    </div>
+  </div> -->
+
 
   <div class="container">
     <div class="subsect">
@@ -51,20 +37,27 @@
           Cumulative GPA: 4.00 <br>
         </div>
         <div class="col">
-          <img src="media/gtsmall.png" style="height: 9rem"alt="">
-          <img src="media/GT.png" style="height: 9rem"alt="">
+          <img src="img/gtsmall.png" style="height: 9rem"alt="">
+          <img src="img/GT.png" style="height: 9rem"alt="">
         </div>
       </div>
 
       <div class="row">
         <div class="col">
           <span style="font-size: 1.3rem;">Classes:</span>
-          <ul>
-            <li>ECE 6550: Linear Systems</li>
-            <li>ECE 6552: Nonlinear Systems</li>
-            <li>ECE 6270: Convex Optimization</li>
-            <li>ECE 6240: Statistical Machine Learning</li>
-          </ul>
+          <a class="" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Expand
+          </a>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <ul>
+                <li>ECE 6550: Linear Systems</li>
+                <li>ECE 6552: Nonlinear Systems</li>
+                <li>ECE 6270: Convex Optimization</li>
+                <li>ECE 6240: Statistical Machine Learning</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -78,144 +71,114 @@
           Cumulative GPA: 3.56 <br>
         </div>
         <div class="col">
-          <img src="media/gtsmall.png" style="height: 9rem"alt="">
-          <img src="media/GT.png" style="height: 9rem"alt="">
+          <img src="img/gtsmall.png" style="height: 9rem"alt="">
+          <img src="img/GT.png" style="height: 9rem"alt="">
         </div>
       </div>
-      <span style="font-size: 1.3rem;">Classes:</span>
 
       <div class="row">
         <div class="col">
-          <h6>Major Specific (ECE)</h6>
-          <ul>
-            <li>ECE 2020: Digital System Design</li>
-            <li>ECE 2026: Digital Signal Processing</li>
-            <li>ECE 2031: Digital Design Lab (VHDL)</li>
-            <li>ECE 2035: Programming HW/SW Systems</li>
-            <li>ECE 2036: Engineering Software Design</li>
-            <li>ECE 2040: Circuit Analysis</li>
-            <li>ECE 3020: Math Foundations of Comp.E</li>
-            <li>ECE 3030: Physical Foundations of Comp.E</li>
-            <li> CS 1371: MATLAB</li>
-            <li>CS 3600: Artificial Inteligence</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h6>Math/Science</h6>
-          <ul>
-            <li>MATH 1553: Linear Algebra</li>
-            <li>MATH 2551: Multivariable Calculus</li>
-            <li>MATH 2552: Differential Equations</li>
-            <li>CHEM 1310: General Chemistry</li>
-            <li>PHYS 2212: Physics II: E&M</li>
-            <li>PHYS 2201: Astronomy</li>
-            <li>ISYE 3770: Probability & Statistics</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h6>Other</h6>
-          <ul>
-            <li>PSYC 1101: General Psychology</li>
-            <li>PSYC 2240: Personality Theory</li>
-            <li>ARCH 2111: History of Architecture I </li>
-            <li>APPH 1040: Health & Wellness</li>
-          </ul>
+          <span style="font-size: 1.3rem;">Classes:</span>
+          <a class="" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+              Expand
+          </a>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+              <div class="row">
+                <div class="col">
+                  <h6>Major Specific (ECE)</h6>
+                  <ul>
+                    <li>ECE 2020: Digital System Design</li>
+                    <li>ECE 2026: Digital Signal Processing</li>
+                    <li>ECE 2031: Digital Design Lab (VHDL)</li>
+                    <li>ECE 2035: Programming HW/SW Systems</li>
+                    <li>ECE 2036: Engineering Software Design</li>
+                    <li>ECE 2040: Circuit Analysis</li>
+                    <li>ECE 3020: Math Foundations of Comp.E</li>
+                    <li>ECE 3030: Physical Foundations of Comp.E</li>
+                    <li> CS 1371: MATLAB</li>
+                    <li>CS 3600: Artificial Inteligence</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h6>Math/Science</h6>
+                  <ul>
+                    <li>MATH 1553: Linear Algebra</li>
+                    <li>MATH 2551: Multivariable Calculus</li>
+                    <li>MATH 2552: Differential Equations</li>
+                    <li>CHEM 1310: General Chemistry</li>
+                    <li>PHYS 2212: Physics II: E&M</li>
+                    <li>PHYS 2201: Astronomy</li>
+                    <li>ISYE 3770: Probability & Statistics</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h6>Other</h6>
+                  <ul>
+                    <li>PSYC 1101: General Psychology</li>
+                    <li>PSYC 2240: Personality Theory</li>
+                    <li>ARCH 2111: History of Architecture I </li>
+                    <li>APPH 1040: Health & Wellness</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <br>
+
 <!--  Experience  -->
     <div class="subsect">
       <h2>Experience</h2>
       <hr>
-      <div class="subsect">
-        <div class="row">
-          <div class="col-sm-1">
-            <img src="media/GTVertical_RGB.png" style="max-width: 100%" alt="">
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <h5>Georgia Institute of Technology | Atlanta, Georgia</h5>
-              </div>
-            </div>
-            <div class="Row">
-              Robotic Hydroponic Imaging Research Student <br>
-              <ul>
-                <li>Currently building a method for 3D scanning and morphological analysis of hydroponically grown lettuce plants using a robotic arm and computer vision.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3 border-left">
-            Summer 2021-Present
-          </div>
-        </div>
-      </div>
-      <div class="subsect">
-        <div class="row">
-          <div class="col-md-10">
-            <h5>Southwest Research Institute | San Antonio, Texas</h5>
-          </div>
-          <div class="col">
-            <h5 style="text-align: right; font-style:italic;">Summer 2020</h5>
-          </div>
-        </div>
-        Robotics Engineering Intern <br>
-        <ul>
-          <li>Improved existing company interface to the Universal Robot system by adding the ability to dynamically detect and adapt to unsafe operations.
-          </li>
-          <li>Rewrote a ROS-Industrial real time path planning algorithm to handle higher dimensional optimization problems, allowing for the use of higher degree-of-freedom robots and systems in real-time path planning applications.</li>
-        </ul>
-      </div>
-      <div class="subsect">
-        <div class="row">
-          <div class="col-md-10">
-            <h5>University of Arizona General Robotics and Optimization with Learning(GROwL) Lab | Tucson, AZ</h5>
-          </div>
-          <div class="col">
-            <h5 style="text-align: right; font-style:italic;">Summer 2019</h5>
-          </div>
-        </div>
-        Research/Laboratory Aide <br>
-        <ul>
-          <li>Wrote an OpenCV programs in Python to find rock and pebble size distributions of a given soil image as well as detect vegetation in an image using an infrared/color camera and a Raspberry Pi
-          </li>
-        </ul>
-      </div>
-      <div class="subsect">
-        <div class="row">
-          <div class="col-md-10">
-            <h5>University of Arizona General Robotics and Optimization with Learning(GROwL) Lab | Tucson, AZ</h5>
-          </div>
-          <div class="col">
-            <h5 style="text-align: right; font-style:italic;">Summer 2018</h5>
-          </div>
-        </div>
-        Research/Laboratory Aide <br>
-        <ul>
-          <li>Developed software to access and record data from the lab's motion capture system using the Robot Operating System(ROS) and various existing packages, which allows students or faculty to test control theory.
-          </li>
-          <li>Assembled small mobile robots purchased in kit form and integrated these robots into above software.</li>
-        </ul>
-        <p style="font-style:italic">Presented this research at a poster session for the ASME International Conference in Pittsburgh, PA – October 2018</p>
-      </div>
-      <div class="subsect">
-        <div class="row">
-          <div class="col">
-            <h5>REhnu/University of Arizona Solar Lab | Tucson, AZ</h5>
-          </div>
-          <div class="col">
-            <h5 style="text-align: right; font-style:italic;">Summer 2015, 2016</h5>
-          </div>
-        </div>
-        Glass Mold Engineer/Lab Tech on REhnu R&D <br>
-        <p class="italic">REhnu is a small solar energy startup which uses arrays of 3 meter curved glass mirrors to track and focus sunlight and generate MW scale electricity at twice the efficiency of standard PV cell arrays.</p>
-        <ul>
-          <li>Helped design and build a stainless steel programmable glass mold in 2015 which allowed REhnu to increase their glass mirror production rate from 1 mirror/2 days to 2 mirrors/day.</li>
-          <li>Created curved glass prisms in 2016 to increase the efficiency of REhnu's solar power conversion unit. </li>
-          <li>Cataloged lab chemicals and created a Material Safety Data Sheet booklet, and tested heat exchangers for efficiency.</li>
-        </ul>
-      </div>
+      {% include experience.html
+        location= "Georgia Tech | Atlanta, GA"
+        jobtitle= "Robotic Hydroponic Imaging Research Student"
+        time= "Summer 2021-Present"
+        image="GT.png"
+        description=
+        "<li> Currently building a method for 3D scanning and morphological analysis of hydroponically grown lettuce plants using a robotic arm and computer vision."
+      %}
+      {% include experience.html
+        location= "Southwest Research Institute | San Antonio, Texas"
+        jobtitle= "Robotics Engineering Intern"
+        time= "Summer 2020"
+        image="swri.png"
+        description=
+        "<li>Improved existing company interface to the Universal Robot system by adding the ability to dynamically detect and adapt to unsafe operations.
+         <li>Rewrote a ROS-Industrial real time path planning algorithm to handle higher dimensional optimization problems, allowing for the use of higher degree-of-freedom robots and systems in real-time path planning applications."
+      %}
+      {% include experience.html
+        location= "University of Arizona General Robotics and Optimization with Learning(GROwL) Lab | Tucson, AZ"
+        jobtitle= "Research/Laboratory Aide"
+        time= "Summer 2019"
+        image="UA.png"
+        description=
+        "<li> Wrote an OpenCV programs in Python to find rock and pebble size distributions of a given soil image as well as detect vegetation in an image using an infrared/color camera and a Raspberry Pi"
+      %}
+      {% include experience.html
+        location= "University of Arizona General Robotics and Optimization with Learning(GROwL) Lab | Tucson, AZ"
+        jobtitle= "Research/Laboratory Aide"
+        time= "Summer 2018"
+        image="UA.png"
+        description=
+        "<li> Developed software to access and record data from the lab's motion capture system using the Robot Operating System(ROS) and various existing packages, which allows students or faculty to test control theory.
+         <li>Assembled small mobile robots purchased in kit form and integrated these robots into above software.
+         <br><br>
+         Presented this research at a poster session for the ASME International Conference in Pittsburgh, PA – October 2018"
+      %}
+      {% include experience.html
+        location= "University of Arizona General Robotics and Optimization with Learning(GROwL) Lab | Tucson, AZ"
+        jobtitle= "Research/Laboratory Aide"
+        time= "Summer 2015, 2016"
+        image="UA.png"
+        description=
+        "<li> Helped design and build a stainless steel programmable glass mold in 2015 which allowed REhnu to increase their glass mirror production rate from 1 mirror/2 days to 2 mirrors/day.
+         <li>Created curved glass prisms in 2016 to increase the efficiency of REhnu's solar power conversion unit.
+         <li>Cataloged lab chemicals and created a Material Safety Data Sheet booklet, and tested heat exchangers for efficiency."
+      %}
     </div>
     <div class="subsect">
       <h2>Skills</h2>
@@ -233,6 +196,7 @@
         Basic Circuit Design, 3D printing, Soldering, Riveting, Basic Machining, Basic Woodworking
       </div>
     </div>
+    <br>
     <div class="subsect">
       <h2>Leadership</h2>
       <hr>
@@ -262,11 +226,3 @@
         </ul>
       </div>
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="bootstrap.js"></script>
-  <script src="mdb.js"></script>
-</body>
-</html>

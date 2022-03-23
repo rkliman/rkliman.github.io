@@ -1,0 +1,8 @@
+- page: About Me
+  location: /about
+- page: Projects
+  location: /projects
+- page: Resume
+  location: /resume
+- page: Art/Media
+  location: /media

@@ -1,0 +1,25 @@
+<div class="subsect">
+  <div class="row">
+    <div class="col-sm-1 border-right text-center">
+      {{include.time}}
+    </div>
+    <div class="col-sm-1">
+      <img src="/img/{{include.image}}" style="max-width: 100%" alt="">
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <h5>{{include.location}}</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          {{include.jobtitle}}
+          <br>
+          {{include.description | markdownify}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
