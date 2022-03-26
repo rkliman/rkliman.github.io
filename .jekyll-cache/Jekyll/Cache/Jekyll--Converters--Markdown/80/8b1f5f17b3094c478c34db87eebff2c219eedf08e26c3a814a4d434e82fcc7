@@ -1,0 +1,4 @@
+I"†<li>Improved existing company interface to the Universal Robot system by adding the ability to dynamically detect and adapt to unsafe operations.
+         <li>Rewrote a ROS-Industrial real time path planning algorithm to handle higher dimensional optimization problems, allowing for the use of higher degree-of-freedom robots and systems in real-time path planning applications.
+</li></li>
+:ET

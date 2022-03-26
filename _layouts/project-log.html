@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    {% include navbar.html %}
+    <br>
+
+    <h1 style="text-align: center;">Project: {{page.title}}</h1>
+
+    <br><br>
+    <div class="container" style="width: 60%">
+      <div class="row">
+        <div class="col-5">
+          <img src="{{page.cover}}" style="border-radius: 3rem; width: 25rem">
+        </div>
+        <div class="col-7">
+          <h3>Description: </h3>
+          {{ content }}
+        </div>
+      </div>
+      <br><br><br><br>
+      <h2 style="text-align: center">Project Log<h2>
+      {% for subpage in site.projects %}
+        {% if subpage.url contains page.title %}
+          {% if subpage.url contains "Post" %}
+            <h3>{{subpage.date | date: "%B %-d, %Y"}}: {{subpage.title}}</h3>
+            <hr>
+            {{subpage.content}}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% include footer.html %}
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

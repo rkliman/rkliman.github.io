@@ -18,8 +18,8 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
       aria-controls="navbarResponsive"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -27,51 +27,104 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/">Home</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/about">About Me</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/projects">Projects</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/resume">Resume</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/media">Art/Media</a>
         </li>
         
+      </ul>
+      <ul class="navbar-nav sm-icons ml-0">
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="nav-link navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://github.com/rkliman" class="nav-link navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="mailto:rkliman11@gmail.com" class="nav-link navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
+<style>
+
+  .sm-icons {
+    flex-direction: row;
+  }
+
+  .navcon img{
+    opacity: 0.6
+  }
+
+  .navcon:hover img{
+    /* filter: invert(0.3) */
+    opacity: 1.0
+  }
+</style>
 
     <br>
 
     <h1 style="text-align: center;">Project: SpotMicro</h1>
 
-    <br>
-    <div class="container"><p>SpotMicro is a cool robot dog that I built with an ESP32.</p>
+    <br><br>
+    <div class="container" style="width: 60%">
+      <div class="row">
+        <div class="col-5">
+          <img src="/img/projects/spotmicro.png" style="border-radius: 3rem; width: 25rem">
+        </div>
+        <div class="col-7">
+          <h3>Description: </h3>
+          <p>SpotMicro is a cool robot dog that I built with an ESP32.</p>
 
-<h3>March 22, 2022: On The Site</h3>
-<hr />
+        </div>
+      </div>
+      <br><br><br><br>
+      <h2 style="text-align: center">Project Log<h2>
+      
+        
+          
+            <h3>March 22, 2022: On The Site</h3>
+            <hr>
+            <p>The SpotMicro project is now on my website! Took a lot of effort, but I’m glad I get to show it off to the world.</p>
 
-<p>The SpotMicro project is now on my website! Took a lot of effort, but I’m glad I get to show it off to the world.</p>
-
-</div>
+          
+        
+      
+        
+          
+        
+      
+    </div>
     <footer class="py-2">
   <br><br><br><br>
-  <hr>
+  <!-- <hr> -->
   <div class="container">
     <p class="m-0 text-center">
       Copyright Randall Kliman &copy; 2022
     </p>
+  </div>
+  <div class="container text-center">
+    <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+    <a href="https://github.com/rkliman" class="navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+    <a href="mailto:rkliman11@gmail.com" class="navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
   </div>
 </footer>
 

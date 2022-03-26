@@ -18,8 +18,8 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
       aria-controls="navbarResponsive"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -27,32 +27,61 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/">Home</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/about">About Me</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/projects">Projects</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/resume">Resume</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/media">Art/Media</a>
         </li>
         
+      </ul>
+      <ul class="navbar-nav sm-icons ml-0">
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="nav-link navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://github.com/rkliman" class="nav-link navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="mailto:rkliman11@gmail.com" class="nav-link navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
-    <div class="container"><p><br /></p>
+<style>
+
+  .sm-icons {
+    flex-direction: row;
+  }
+
+  .navcon img{
+    opacity: 0.6
+  }
+
+  .navcon:hover img{
+    /* filter: invert(0.3) */
+    opacity: 1.0
+  }
+</style>
+
+    <div class="container" style="width: 45%">
+      <p><br /></p>
 
 <h1 style="text-align: center;">About Me</h1>
 
@@ -61,26 +90,27 @@
 
 <p>I’m a Masters student studying <strong class="text-primary">Electrical and Computer Engineering</strong> at <strong class="text-warning">Georgia Tech</strong>. I have a strong interest in robotics with a specialty in control systems design. Other interests include embedded systems and micro-controller applications as well as the application of cognitive science to help improve robotic systems. I am also a deep believer in sustainability and climate action. Much of my work and research is into how robotics can be used to help solve the climate issues that will present themselves over the next few decades. Specifically, I’m interested in how robotics can be applied in the agriculture field to create decentralized and automated growing systems that can be built in developing areas and food deserts around the world.</p>
 
-<p><br /></p>
 <h2 id="why-robotics">Why Robotics?</h2>
 
-<p>In the future, robotics will become one of the most important and emergent fields over the next 10-20 years.Additionally, robotic technologies are improving at an exponential rate each year. This growth also means that their capabilities are being used to take away more jobs every year. By moving into the robotics field, I am theoretically giving myself an element of job security. My main goals in the robotics field is to help advance the anthropomorphic robot field. Robots are currently used in industry to help with manufacturing and warehouse efficiency improvement. However, they have a huge ability to help out in the domestic and home industries. This includes industries like hospice care and home assistance. Mostly, I think that robots can play a huge role in freeing people from menial jobs which do not let them explore their full potential. Looking forward, I want to learn a lot more about the robotics field and aim to complete a masters in ECE/Robotics. Specifically in my career, I want to work to develop robots that can perform very complex and difficult tasks that humans can do as well as tasks that humans struggle to do.</p>
+<p>Robotics is quickly becoming one of the most important and emergent fields in industry, reaching further into the supply chain and revolutionizing transportation. Additionally, robotic technologies are improving at an exponential rate each year. This growth also means that their capabilities are being used to take away more jobs every year. Robots are currently used in industry to help with manufacturing and warehouse efficiency improvement. However, they have a huge ability to help out in the domestic and home industries. This includes industries like hospice care and home assistance.</p>
 
 <h2 id="hobbies">Hobbies</h2>
 
-<ul>
-  <li>Electronics</li>
-  <li>Stoneworking</li>
-  <li>Dungeons and Dragons</li>
-</ul>
-</div>
+<p>I have a variety of hobbies that include electronics, hobby robotics, stoneworking and sculpture, and tabletop roleplaying games.</p>
+
+    </div>
     <footer class="py-2">
   <br><br><br><br>
-  <hr>
+  <!-- <hr> -->
   <div class="container">
     <p class="m-0 text-center">
       Copyright Randall Kliman &copy; 2022
     </p>
+  </div>
+  <div class="container text-center">
+    <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+    <a href="https://github.com/rkliman" class="navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+    <a href="mailto:rkliman11@gmail.com" class="navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
   </div>
 </footer>
 

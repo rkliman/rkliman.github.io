@@ -4,8 +4,8 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
       aria-controls="navbarResponsive"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -13,15 +13,43 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/">Home</a>
         </li>
         {% for page in site.data.pages %}
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="{{page.location}}">{{page.page}}</a>
         </li>
         {% endfor %}
+      </ul>
+      <ul class="navbar-nav sm-icons ml-0">
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="nav-link navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://github.com/rkliman" class="nav-link navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="mailto:rkliman11@gmail.com" class="nav-link navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
+<style>
+
+  .sm-icons {
+    flex-direction: row;
+  }
+
+  .navcon img{
+    opacity: 0.6
+  }
+
+  .navcon:hover img{
+    /* filter: invert(0.3) */
+    opacity: 1.0
+  }
+</style>

@@ -18,8 +18,8 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarResponsive"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
       aria-controls="navbarResponsive"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -27,30 +27,58 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/">Home</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/about">About Me</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/projects">Projects</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/resume">Resume</a>
         </li>
         
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/media">Art/Media</a>
         </li>
         
+      </ul>
+      <ul class="navbar-nav sm-icons ml-0">
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="nav-link navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="https://github.com/rkliman" class="nav-link navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+        </li>
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="mailto:rkliman11@gmail.com" class="nav-link navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
+<style>
+
+  .sm-icons {
+    flex-direction: row;
+  }
+
+  .navcon img{
+    opacity: 0.6
+  }
+
+  .navcon:hover img{
+    /* filter: invert(0.3) */
+    opacity: 1.0
+  }
+</style>
 
     <div class="container"><div class="container" style="margin-top: 3em; margin-bottom: 2em">
     <h1 class="text-center">Art and Media</h1>
@@ -106,7 +134,7 @@
 <div class="row row-cols-3 g-4">
   <div class="col">
     <div class="card text-center">
-      <img class="card-img-top" src="/img/Graphic Design/All-might.png" alt="Card image" onContextMenu="return false;">
+      <img class="card-img-top" src="/img/Graphic Design/All-might.png" alt="Card image">
       <div class="card-body">
         <h5 class="card-title">"All-might" -2018</h5>
       </div>
@@ -114,7 +142,7 @@
   </div>
   <div class="col">
     <div class="card text-center">
-      <img class="card-img-top" src="/img/Graphic Design/Daft_punk_poster.png" alt="Card image" onContextMenu="return false;">
+      <img class="card-img-top" src="/img/Graphic Design/Daft_punk_poster.png" alt="Card image">
       <div class="card-body">
         <h5 class="card-title">"Daft Punk Poster" -2018</h5>
       </div>
@@ -122,7 +150,7 @@
   </div>
   <div class="col">
     <div class="card text-center">
-      <img class="card-img-top" src="/img/Graphic Design/outrun-wave-decal-69-420.jpg" alt="Card image" onContextMenu="return false;">
+      <img class="card-img-top" src="/img/Graphic Design/outrun-wave-decal-69-420.jpg" alt="Card image">
       <div class="card-body">
         <h5 class="card-title">"Outrun highway" -2017</h5>
       </div>
@@ -132,11 +160,16 @@
 </div>
     <footer class="py-2">
   <br><br><br><br>
-  <hr>
+  <!-- <hr> -->
   <div class="container">
     <p class="m-0 text-center">
       Copyright Randall Kliman &copy; 2022
     </p>
+  </div>
+  <div class="container text-center">
+    <a href="https://www.linkedin.com/in/randall-kliman-333918152/"  class="navcon"><img src="/img/icons/linkedin.svg" style="width: 1.5rem;"></a>
+    <a href="https://github.com/rkliman" class="navcon"><img src="/img/icons/github.svg" style="width: 1.5rem;"></a>
+    <a href="mailto:rkliman11@gmail.com" class="navcon"><img src="/img/icons/envelope-fill.svg" style="width: 1.5rem;""></a>
   </div>
 </footer>
 

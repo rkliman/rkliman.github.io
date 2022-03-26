@@ -7,8 +7,17 @@
 
     <h1 style="text-align: center;">Project: {{page.title}}</h1>
 
-    <br>
-    <div class="container">{{ content }}</div>
+    <br><br>
+    <div class="container" style="width: 60%">
+      <div class="row">
+        <div class="col-5">
+          <img src="{{page.cover}}" style="border-radius: 3rem; width: 25rem">
+        </div>
+        <div class="col-7">
+          <h3>Description: </h3>
+          {{ content }}
+        </div>
+      </div>
     {% include footer.html %}
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
